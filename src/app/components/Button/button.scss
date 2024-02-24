@@ -1,0 +1,23 @@
+.button {
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  display: block;
+  cursor: pointer;
+  &:disabled {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: default;
+  }
+}
+
+.primary-button {
+  background: #4b51ef;
+}
+
+.secondary-button {
+  background: #54cf4f;
+}

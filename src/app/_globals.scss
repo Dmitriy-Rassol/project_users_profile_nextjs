@@ -1,0 +1,59 @@
+@import "./variables";
+
+.flex-container {
+  display: flex;
+  &.row {
+    flex-direction: row;
+  }
+
+  &.column {
+    flex-direction: column;
+  }
+
+  &.space-between {
+    justify-content: space-between;
+  }
+}
+
+.align-right {
+  text-align: right;
+}
+.align-baseline {
+  align-items: baseline;
+}
+.display-initial {
+  display: initial;
+}
+html {
+  min-height: 100vh;
+
+  body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+
+    .main-layout {
+      display: flex;
+      min-height: 100vh;
+
+      .sidenav {
+        width: 25%;
+        background-color: $sidenavBgColor;
+        min-height: 100vh;
+        padding: 35px 20px;
+      }
+
+      .content {
+        width: 75%;
+        background-color: $contentBgColor;
+        min-height: 100vh;
+
+        .page-wrapper {
+          margin: 30px;
+        }
+      }
+    }
+  }
+}
